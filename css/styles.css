@@ -1,3 +1,8 @@
+:root {
+  link-hover-yellow: #FAD400;
+  link-hover-red: #FE7766;
+}
+
 @font-face {
   font-family: "Barlow";
   src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"),
@@ -48,21 +53,145 @@ body {
   background-image: url(../img/feature-apelsin.png);
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
   padding-bottom: 300px;
   padding-top: 32px;
 }
 
+.header-top {
+  display: flex;
+  align-items: center;
+}
+
+.hamburder-button {
+  background-image: url(../img/humburger-button.svg);
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+}
+
 .hero__heading {
   font-family: "Fraunces 9pt", "Timer New Roman", "Serif";
-  font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 49px;
   text-align: center;
   letter-spacing: 6.25px;
   text-transform: uppercase;
+  margin-top: 88px;
+  margin-bottom: 52px;
 
   color: #FFFFFF;
 }
 
+.hero-arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+
+/* SITE FEATURE */
+
+.feature-contend {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+.feature__heading {
+  font-family: "Fraunces 9pt",
+  "Timer New Roman",
+  "Serif";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.228571px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #24303E;
+}
+
+.feature-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #808397;
+}
+
+.feature__link {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Fraunces 9pt",
+  "Timer New Roman",
+  "Serif";
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303E;
+  /* display: inline-block; */
+  z-index: 1;
+
+}
+.feature__link::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 99px;
+  display: block;
+  background: #FAD400;
+  opacity: 0.25;
+  border-radius: 28px;
+  height: 10px;
+  width: 137px;
+  z-index: -1;
+}
+
+/* SITE SERVICES */
+.services {
+  background-image: url(../img/feature-cherry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 400px;
+  padding-bottom: 60px;
+}
+
+.services--mandarin {
+    background-image: url(../img/feature-mandarin.png);
+
+}
+
+.services__heading {
+  font-family: "Fraunces 9pt",
+  "Timer New Roman",
+  "Serif";
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #24554A;
+}
+
+.services__text {
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #24554A;
+}
