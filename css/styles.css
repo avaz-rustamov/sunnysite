@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   padding-bottom: 300px;
   padding-top: 32px;
+  background-color: #4ABDF2;
 }
 
 .header-top {
@@ -295,6 +296,15 @@ body {
 @media only screen and (min-width: 1024px) {
   .hamburder-button {
     display: none;
+  }
+  .site_header {
+    background-image: url(../img/hero-bg-desktop.png);
+  }
+
+  .hero__heading {
+    font-size: 56px;
+    line-height: 69px;
+    letter-spacing: 8.75px;
   }
 }
 
