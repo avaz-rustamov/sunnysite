@@ -195,3 +195,56 @@ body {
   letter-spacing: -0.114286px;
   color: #24554A;
 }
+
+/* Modal */
+.site-modal {
+  background-color: #FFFCF8;
+  display: none;
+  position: absolute;
+  top: 90px;
+}
+
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 39px 95px;
+}
+
+.modal__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.modal__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.142857px;
+  color: #808397;
+}
+
+.modal__link--yellow {
+  background-color: #FBD600;
+  border-radius: 28px;
+  padding: 15px 30px;
+}
+
+.site-modal--open {
+  display: block;
+}
+.arrow-left {
+  position: absolute;
+  top: -23px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 24px solid #FFFCF8;
+}
