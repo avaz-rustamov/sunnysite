@@ -207,7 +207,13 @@ body {
 }
 
 /* SITE SERVICES */
-.services {
+
+.services-item {
+  padding-left: 0;
+  list-style: none;
+}
+
+.services-item {
   background-image: url(../img/feature-cherry.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,14 +222,15 @@ body {
 }
 
 .services--mandarin {
-    background-image: url(../img/feature-mandarin.png);
-
+  background-image: url(../img/feature-mandarin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 400px;
+  padding-bottom: 60px;
 }
 
 .services__heading {
-  font-family: "Fraunces 9pt",
-  "Timer New Roman",
-  "Serif";
+  font-family: "Fraunces 9pt","Timer New Roman","Serif";
   margin-top: 0;
   margin-bottom: 27px;
   font-weight: 900;
@@ -306,10 +313,114 @@ body {
     line-height: 69px;
     letter-spacing: 8.75px;
   }
+
+  .services__item {
+    background-image: url(../img/services-img-cherry--desktop.jpg);
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .services--mandarin {
+    background-image: url(../img/services-mandarin-desktop.png);
+
+  }
+
+  .services-top {
+    display: flex;
+
+  }
+  .services-top-img {
+    width: 50%;
+
+  }
+
+  .feature-contend {
+    width: 50%;
+  }
+
+  .site-services {
+    /* display: flex; */
+  }
+
+  .site-services__buttom {
+    display: flex;
+  }
+
+  .feature__link {
+    left: 193px;
+  }
+
+  .services-top-img {
+    width: 720px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
   .sitenav {
     display: none;
   }
+}
+
+.site-client {}
+
+.client {
+
+  padding-top: 160px;
+}
+
+.client__heading {
+  font-family: "Fraunces 9pt", "Times New Roman";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #A7AAAD;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.client__list {
+  display: flex;
+  margin-left: 0;
+  list-style: none;
+  margin-left: -30px;
+}
+
+.client__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  margin-left: 30px;
+}
+
+.client__img {
+}
+
+.client__text {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+}
+
+.client__name {
+  font-family: "Fraunces 9pt","Times New Roman";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+
+  color: #24303E;
+}
+
+.client__position {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
 }
