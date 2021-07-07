@@ -359,6 +359,18 @@ body {
   .sitenav {
     display: none;
   }
+  .client__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .client__item {
+    width: 327px;
+  }
+  .client__item .client__heading {
+    font-size: 36px;
+    line-height: 20px;
+    letter-spacing: 4px;
+  }
 }
 
 .site-client {}
@@ -395,9 +407,6 @@ body {
   margin-left: 30px;
 }
 
-.client__img {
-}
-
 .client__text {
   font-size: 18px;
   line-height: 32px;
@@ -423,4 +432,13 @@ body {
   text-align: center;
   letter-spacing: -0.1px;
   color: #A7AAAD;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #90D4C6;
+  padding-bottom: 72px;
+  padding-top: 72px;
 }
